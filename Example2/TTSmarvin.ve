@@ -1,0 +1,24 @@
+hash build in io x
+hash build in tts x
+
+int main x
+    scope out left shift x
+    literal quote hello terminal exclamation mark literal endquote x
+    left shift end line x
+    
+    TtsVoice marvin equals new TtsVoice x
+    marvin dot set voice name takes literal quote marvin literal endquote x
+    
+    string tts message equals literal quote hello world literal endquote x
+    
+    scope out left shift x
+    literal quote Marvin is about to say colon whitespace literal endquote x
+    left shift tts message x
+    left shift end line x
+    
+    marvin dot speak takes tts message x
+    
+    time dot sleep for seconds takes two x
+    
+    return zero x
+end main x
