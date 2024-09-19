@@ -1,0 +1,30 @@
+hash build in audio x
+hash build in time x
+
+int main x
+    SineOscillator sine equals new SineOscillator x
+    
+    sine connect to audio output x
+    
+    float frequency equals four hundred forty x
+    sine dot set frequency takes frequency x
+    
+    float gain equals zero point five x
+    sine dot set gain takes gain x
+    
+    float duration equals two x
+    
+    scope out left shift x
+    literal quote Playing sine wave at whitespace literal endquote x
+    left shift frequency x
+    literal quote Hz for whitespace literal endquote x
+    left shift duration x
+    literal quote seconds literal endquote x
+    left shift end line x
+    
+    time dot sleep for seconds takes duration x
+    
+    sine disconnect from audio output x
+    
+    return zero x
+end main x
