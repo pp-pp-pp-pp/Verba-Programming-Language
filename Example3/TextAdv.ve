@@ -1,0 +1,98 @@
+hash build in io x
+hash build in random x
+
+int main x
+    string player name x
+    int health equals one hundred x
+    boolean has sword equals false x
+    boolean game over equals false x
+
+    scope out left shift x
+    literal quote Welcome to the Verba Text Adventure exclamation mark literal endquote x
+    left shift end line x
+    
+    scope out left shift x
+    literal quote What is your name question mark whitespace literal endquote x
+    scope in right shift player name x
+
+    while game over is false x
+        scope out left shift x
+        literal quote whitespace literal endquote x
+        left shift end line x
+        scope out left shift x
+        literal quote whitespace literal endquote x
+        left shift player name x
+        literal quote comma your health is whitespace literal endquote x
+        left shift health x
+        left shift end line x
+
+        if has sword is true x
+            scope out left shift x
+            literal quote You are carrying a sword period literal endquote x
+            left shift end line x
+        end if x
+
+        scope out left shift x
+        literal quote What do you want to do question mark literal endquote x
+        left shift end line x
+        scope out left shift x
+        literal quote one colon Explore whitespace two colon Rest whitespace three colon Quit literal endquote x
+        left shift end line x
+
+        int choice x
+        scope in right shift choice x
+
+        if choice equals one x
+            int event equals random integer between one and three x
+            if event equals one x
+                scope out left shift x
+                literal quote You find a sword exclamation mark literal endquote x
+                left shift end line x
+                has sword equals true x
+            else if event equals two x
+                scope out left shift x
+                literal quote You encounter a monster exclamation mark literal endquote x
+                left shift end line x
+                if has sword is true x
+                    scope out left shift x
+                    literal quote You defeat it with your sword period literal endquote x
+                    left shift end line x
+                else x
+                    scope out left shift x
+                    literal quote You take damage escaping period literal endquote x
+                    left shift end line x
+                    health equals health minus twenty x
+                end if x
+            else x
+                scope out left shift x
+                literal quote You find nothing of interest period literal endquote x
+                left shift end line x
+            end if x
+        else if choice equals two x
+            scope out left shift x
+            literal quote You rest and recover some health period literal endquote x
+            left shift end line x
+            health equals health plus ten x
+            if health is greater than one hundred x
+                health equals one hundred x
+            end if x
+        else if choice equals three x
+            game over equals true x
+        end if x
+
+        if health is less than or equal to zero x
+            game over equals true x
+            scope out left shift x
+            literal quote You have been defeated exclamation mark Game over period literal endquote x
+            left shift end line x
+        end if x
+    end while x
+
+    scope out left shift x
+    literal quote Thanks for playing comma whitespace literal endquote x
+    left shift player name x
+    literal quote exclamation mark literal endquote x
+    left shift end line x
+
+    return zero x
+end main x
